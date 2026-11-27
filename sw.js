@@ -1,5 +1,5 @@
-const cacheName = 'potatowala-operations-shell-v1';
-const shell = ['./', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
+const cacheName = 'potatowala-operations-shell-v2';
+const shell = ['./', './startup-photos/01.jpg', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(shell)));
